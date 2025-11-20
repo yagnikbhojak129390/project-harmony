@@ -112,7 +112,7 @@ if (authForm) {
                 sessionStorage.setItem('currentUser', JSON.stringify(user));
 
                 // Redirect to app
-                window.location.href = '/Dashboard/dashboard.html';
+                window.location.href = '../Dashboard/dashboard.html';
             }, 2000);
         }
     });
