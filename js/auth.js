@@ -3,7 +3,7 @@ let users = JSON.parse(localStorage.getItem('harmony_credentials')) || [
     {
         id: 1,
         name: "Demo User",
-        email: "user@project-harmony.netlify.app",
+        email: "demo.user@harmony.com",
         password: "90wu9y78gy",
         createdAt: new Date().toISOString()
     }
@@ -139,7 +139,7 @@ function showRegisterForm() {
 }
 
 // Check for authenticated user on app page
-if (window.location.pathname.includes('/Dashboard/dashboard.html')) {
+if (window.location.pathname.includes('../Dashboard/dashboard.html')) {
     const currentUser = JSON.parse(sessionStorage.getItem('currentUser'));
 
     if (!currentUser) {
